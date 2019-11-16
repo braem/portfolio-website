@@ -2,87 +2,77 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap 4 Website Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
+  <title>Downloads</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+  crossorigin="anonymous">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      window.setSelectedNavItem("downloads");
-    </script>
+  <link rel="stylesheet" href="css/fontawesome/all.css">
+
+  <script src="js/jquery/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    window.setSelectedNavItem("downloads");
+    $(document).ready(function() {
+      createMapDownloadContent("tawatyr", "img/maps/tawatyr/tawatyr (1).jpg");
+      createMapDownloadContent("ataronchronon", "img/maps/ataronchronon/ataronchronon (1).jpg");
+      createMapDownloadContent("abandon", "img/maps/abandon/abandon (1).jpg");
+      createMapDownloadContent("hana", "img/maps/hana/hana (1).jpg");
+      createMapDownloadContent("starve", "img/maps/starve/starve (1).jpg");
+      createMapDownloadContent("polar", "img/maps/polar/polar (1).jpg");
+      createMapDownloadContent("maso", "img/maps/maso/maso (1).jpg");
+      createMapDownloadContent("tutankhamun", "img/maps/tutankhamun/tutankhamun (1).jpg");
+    });
+  </script>
 </head>
-<body>
-  <div id="jumbo"></div>
+<body style="background-color: #2b3039;">
+  <div class="se-pre-con"></div>
 
-<!-- Navigation Bar -->
+  <div id="jumbo"></div>
   <div id="navi"></div>
 
-  <div class="container" style="margin-top:30px;">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Jump Links</h3>
-        <ul class="nav nav-pills flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">My Map Downloads</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://jump.tf/">JumpTF</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1LcGfNOfIxFF21I5KWSCM0kEu4X4A9W3ngWFouprGJuo/edit#gid=0">
-              Jump Map List
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://tempus.xyz/">Tempus Servers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1fDCsUFRbWTHLFqzMT0xAZSFAardarSg6XPrTKt5AXhE/edit#gid=1649478861">
-              Bounce/Jumpbug Heights
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://discord.gg/HU9ZgUA">
-              TF2RJWeekly Discord
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://discord.gg/Tv7ymTP">
-              Tempus Discord
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://discord.gg/T7pQ72r">
-              Momentum Mod Discord
-            </a>
-          </li>
-        </ul>
-        <hr class="d-sm-none">
+  <div class="container-fluid p-3 mb-2 text-light bg-color-dark-2" id="main-container">
+    <div class="row row-no-gutter">
+      <div class="col-md-6 bg-color-dark-2">
+        <h2>Map Downloads</h2>
+        <div class="row row-no-gutter">
+          <div class="col-md-12 bg-color-dark-2 nopadding" id="tawatyr-dl-content" style="margin:0; padding:0; "></div>
+        </div>
+        <div class="row row-no-gutter">
+          <div class="col-md-12 bg-color-dark-2 nopadding" id="ataronchronon-dl-content" style="margin:0; padding:0"></div>
+        </div>
+        <div class="row row-no-gutter">
+          <div class="col-md-12 bg-color-dark-2 nopadding" id="abandon-dl-content" style="margin:0; padding:0"></div>
+        </div>
+        <div class="row row-no-gutter">
+          <div class="col-md-12 bg-color-dark-2 nopadding" id="hana-dl-content" style="margin:0; padding:0"></div>
+        </div>
+        <div class="row row-no-gutter">
+          <div class="col-md-12 bg-color-dark-2 nopadding" id="starve-dl-content" style="margin:0; padding:0"></div>
+        </div>
+        <div class="row row-no-gutter">
+          <div class="col-md-12 bg-color-dark-2 nopadding" id="polar-dl-content" style="margin:0; padding:0"></div>
+        </div>
+        <div class="row row-no-gutter">
+          <div class="col-md-12 bg-color-dark-2 nopadding" id="maso-dl-content" style="margin:0; padding:0"></div>
+        </div>
+        <div class="row row-no-gutter">
+          <div class="col-md-12 bg-color-dark-2 nopadding" id="tutankhamun-dl-content" style="margin:0; padding:0"></div>
+        </div>
       </div>
-      <div class="col-sm-8">
-        <h2>Hi! I'm brae :)</h2>
-        <h5>Nov. 11, 2019</h5>
-        <p>
-          Welcome to my website!
-          Here I put everything that interests me, which is a lot!
-          I'm an interdisciplinary researcher and a MSc. Candidate in Computer Science working in the field of automated music composition.
-          My interest in music comes from over a decade of playing classical guitar, some bass guitar, and very recently piano.
-          I also have been creating playable maps for years with Valve's Hammer Tool.
-        </p>
-        <p>
-          I post all of my creations here &mdash; and I suppose my algorithm's creations as well ;p. <a href="#">Let me know what you think!</a>
-        </p>
-        <br>
+      <div class="col-md-6 bg-color-dark-2">
+        <h2>&mu;Psyc Archive</h2>
       </div>
     </div>
   </div>
   
   <div id="brae-footer"></div>
-
+  
 </body>
 
 </html>
