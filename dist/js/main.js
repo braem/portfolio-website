@@ -27,8 +27,8 @@ function createMapContent(mapName, releaseDate, numImgs, videoLink, jumptfLink, 
     $("#"+mapName+"-content").html('<h2><center>jump_' + mapName + '</center></h2>' +
     '<h5><center>Released ' + releaseDate + '</center></h5>' +
     '<h6><center id="link-wrapper"><a href="' + jumptfLink + '">JumpTF Post</a> | <a href="' + mapGitRepo + '"><i class="fas fa-download fa-1x"></i> Download</a> | <a href="' + tempusLink + '">Tempus Times</a></center></h6>' +
-    '<div class="container-fluid showcase"><h3>Screenshots:</h3><div id="' + mapName + '-carousel" class="carousel slide" data-ride="carousel"></div></div><br>' +
-    '<div class="container-fluid showcase"><h3>Showcase:</h3><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="' + videoLink + '" allowfullscreen></iframe></div></div>');
+    '<div class="container-fluid showcase"><center><h3>Screenshots:</h3></center><div id="' + mapName + '-carousel" class="carousel slide" data-ride="carousel"></div></div><br>' +
+    '<div class="container-fluid showcase"><center><h3>Showcase:</h3></center><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="' + videoLink + '" allowfullscreen></iframe></div></div>');
 
     $("#"+mapName+"-carousel").html('<ul class="carousel-indicators" id="' + mapName + '-carousel-indicators"></ul>' + 
     '<div class="carousel-inner" id="' + mapName + '-carousel-inner"></div>' +
@@ -70,4 +70,26 @@ function createMapDownloadContent(mapName, imgSrc) {
 
 function loadPage(page) {
     this.document.location.href = page;
+}
+
+
+function execCopy(text) {
+    const el = document.createElement('textarea');  // Create a <textarea> element
+    el.value = text;                                // Set its value to the string that you want copied
+    el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
+    el.style.position = 'absolute';                 
+    el.style.left = '-9999px';                      // Move outside the screen to make it invisible
+    document.body.appendChild(el);                  // Append the <textarea> element to the HTML document
+    const selected =            
+        document.getSelection().rangeCount > 0        // Check if there is any content selected previously
+        ? document.getSelection().getRangeAt(0)     // Store selection if found
+        : false;                                    // Mark as false to know no selection existed before
+    el.select();                                    // Select the <textarea> content
+    document.execCommand('copy');                   // Copy - only works as a result of a user action (e.g. click events)
+    document.body.removeChild(el);                  // Remove the <textarea> element
+    if (selected) {                                 // If a selection existed before copying
+        document.getSelection().removeAllRanges();    // Unselect everything on the HTML document
+        document.getSelection().addRange(selected);   // Restore the original selection
+    }
+    $('.toast').toast('show');    
 }

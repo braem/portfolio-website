@@ -11,14 +11,22 @@
   crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/fontawesome/all.css">
-
-  <script src="js/jquery/jquery-3.4.1.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+  <script src="js/popper/tooltip.js"></script>
+  <script src="js/popper/popper.js"></script>
+  <script src="js/jquery/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap/bootstrap.min.js"></script>
 
   <script src="js/main.js"></script>
   <script>
     window.setSelectedNavItem("contact");
+    $(document).ready(function() {
+      //init tooltip
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+      });
+    });
   </script>
 </head>
 <body style="background-color: #2b3039;">
@@ -28,13 +36,57 @@
 
   <div class="container-fluid p-3 mb-2 text-light bg-color-dark-2" id="main-container">
     <div class="row">
-      <div class="col-xs-4 bg-color-dark-2">
-        
+      <div class="col-md-6">
+        <div class="container-fluid showcase">
+          <h2>Research Related</h2>
+          <p>
+            If your reason for contact is research related, please contact me at 
+          </p>
+          <center>
+            <span class="text-color-pastel-1 email-name">stoltz</span><span class="text-color-pastel-4">@</span><span class="text-color-pastel-1 email-domain">unbc.ca</span>
+            <button class="btn btn-default copy-button" id="copy-button" onclick="execCopy('stoltz@unbc.ca')" type="button" data-toggle="tooltip" data-placement="right" title="Copy to Clipboard">
+                <i class="fa fa-clipboard fa-1x text-color-pastel-4"></i>
+            </button>
+          </center>
+          <center>
+            250-301-2304
+          </center>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="container-fluid showcase">
+          <h2>Other</h2>
+          <p>
+            For any other purpose contact me at
+          </p>
+          <center>
+            <span class="text-color-pastel-1 email-name">braebrae</span><span class="text-color-pastel-4">#</span><span class="text-color-pastel-1 email-domain">7284</span>
+            <button class="btn btn-default copy-button" id="copy-button" onclick="execCopy('braebrae#7284')" type="button" data-toggle="tooltip" data-placement="right" title="Copy to Clipboard">
+              <i class="fab fa-discord fa-1x text-color-pastel-4"></i>
+            </button>
+          </center>
+          <center>
+            <span class="text-color-pastel-1 email-name">brae</span><span class="text-color-pastel-4">@</span><span class="text-color-pastel-1 email-domain">braebie.com</span>
+            <button class="btn btn-default copy-button" id="copy-button" onclick="execCopy('brae@braebie.com')" type="button" data-toggle="tooltip" data-placement="right" title="Copy to Clipboard">
+              <i class="fa fa-clipboard fa-1x text-color-pastel-4"></i>
+            </button>
+          </center>
+          <center>
+            250-301-2304
+          </center>
+        </div>
       </div>
 
     </div>
   </div>
   
+  <div class="toast">
+    <div class="toast-header">
+      Copied
+    </div>
+  </div>
+
   <div id="brae-footer"></div>
   
 </body>

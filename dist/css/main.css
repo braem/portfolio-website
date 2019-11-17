@@ -84,8 +84,7 @@ body {
   margin: 0;
   padding: 1em;
   background-color: #282c34;
-  border: 0.2em solid #21252c;
-  text-align: center; }
+  border: 0.2em solid #21252c; }
 
 .download-showcase-container {
   background-color: #282c34;
@@ -196,5 +195,16 @@ body {
   border-top: 0.15em solid #282c34; }
 
 .nopadding {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.tooltip.show {
+  opacity: 0.4 !important; }
+
+.toast {
+  background-color: #21252c;
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
   margin: 0 !important;
   padding: 0 !important; }
