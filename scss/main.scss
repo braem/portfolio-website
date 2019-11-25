@@ -186,6 +186,9 @@ body {
   background-color: $background-color-3;
   border: 0.2em solid $background-color-4;
 }
+#main-container .nav-tabs .nav-item {
+  width:100%;
+}
 #main-container .nav-tabs .nav-link {
   border: 0.1em solid transparent;
   color: $color-offwhite;
