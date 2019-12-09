@@ -21,6 +21,8 @@
     window.setSelectedNavItem("mapping");
     $(document).ready(function() {
       //$('#tawatyr-content').load("maps/tawatyr.html");
+      createMapContent("byhicrine", "Dec. 8, 2019", 7, "https://www.youtube.com/watch?v=G8PD4JY6oXY",
+      "https://jump.tf/forum/index.php/topic,2992.0.html","#");
       createMapContent("tawatyr", "Feb. 16, 2019", 14, "https://www.youtube.com/embed/w106zX6vYsY",
       "https://jump.tf/forum/index.php/topic,2835.0.html","https://tempus.xyz/maps/jump_tawatyr");
       createMapContent("ataronchronon", "Oct. 22, 2018", 14, "https://www.youtube.com/embed/YzNunJxCh8s",
@@ -52,7 +54,8 @@
         <div class="container-fluid showcase">
           <center><h3>My Jump Maps</h3></center>
           <div class="nav flex-column nav-tabs col-xs-4 nav-da" id="maps-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" id="tawatyr-tab" data-toggle="pill" href="#tawatyr" role="tab" aria-controls="tawatyr" aria-selected="true">tawatyr</a>
+            <a class="nav-link active" id="byhicrine-tab" data-toggle="pill" href="#byhicrine" role="tab" aria-controls="byhicrine" aria-selected="true">byhicrine</a>
+            <a class="nav-link" id="tawatyr-tab" data-toggle="pill" href="#tawatyr" role="tab" aria-controls="tawatyr" aria-selected="true">tawatyr</a>
             <a class="nav-link" id="ataronchronon-tab" data-toggle="pill" href="#ataronchronon" role="tab" aria-controls="ataronchronon" aria-selected="false">ataronchronon</a>
             <a class="nav-link" id="hana-tab" data-toggle="pill" href="#hana" role="tab" aria-controls="hana" aria-selected="false">hana</a>
             <a class="nav-link" id="abandon-tab" data-toggle="pill" href="#abandon" role="tab" aria-controls="abandon" aria-selected="false">abandon</a>
@@ -98,6 +101,9 @@
       </div>
 
       <div class="tab-content col-md-8" id="maps-tabContent">
+        <div class="tab-pane fade show active" id="byhicrine" role="tabpanel" aria-labelledby="byhicrine-tab">
+          <div id="byhicrine-content"></div>
+        </div>
         <div class="tab-pane fade show active" id="tawatyr" role="tabpanel" aria-labelledby="tawatyr-tab">
           <div id="tawatyr-content"></div>
         </div>
