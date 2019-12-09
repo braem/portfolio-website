@@ -23,11 +23,18 @@ body {
   width: 1em;          
 }
 ::-webkit-scrollbar-thumb {
- background: -webkit-gradient(linear,left top,left bottom,from($pastel-color-4),to($pastel-color-1  ));
+  background: -webkit-gradient(linear,left top,left bottom,from($pastel-color-4),to($pastel-color-1));
+}
+::-webkit-scrollbar-thumb:vertical {
+  background: -webkit-gradient(linear,left top,left bottom,from($pastel-color-4),to($pastel-color-1));
 }
 ::-webkit-scrollbar-track {     
- background-color: #fff;
- background: linear-gradient(to right, $background-color-4, $background-color-4 1em,$background-color-3 1em, $background-color-3);
+  background-color: #fff;
+  background: linear-gradient(to right, $background-color-4, $background-color-4 1em,$background-color-3 1em, $background-color-3);
+}
+::-webkit-scrollbar-track-piece  {
+  background-color: #fff;
+  background: linear-gradient(to right, $background-color-4, $background-color-4 1em,$background-color-3 1em, $background-color-3);
 }
 
 //loading spinner
@@ -179,12 +186,15 @@ body {
 /* Container & side-menu styles (navs and headers) */
 #main-container {
   margin:0em!important;
-  padding:1em!important;
-  padding-top:0.5em!important;
+  //padding:1em!important;
+  //padding-top:0.5em!important;
 }
 #main-container .nav-tabs {
   background-color: $background-color-3;
   border: 0.2em solid $background-color-4;
+}
+#main-container .nav-tabs .nav-item {
+  width:100%;
 }
 #main-container .nav-tabs .nav-link {
   border: 0.1em solid transparent;

@@ -1,4 +1,3 @@
-
 window.onload = function() {
     $(".se-pre-con").fadeOut("slow");
 };
@@ -67,11 +66,6 @@ function createMapDownloadContent(mapName, imgSrc) {
     '</div></div>' + //jumbotron div end
     '</div>');
 }
-
-function loadPage(page) {
-    this.document.location.href = page;
-}
-
 
 function execCopy(text) {
     const el = document.createElement('textarea');  // Create a <textarea> element
