@@ -22,13 +22,22 @@ function updateSelectedNavItem() {
 
 //map stuffs
 var mapsGitRepo = "https://github.com/braem/TF2JumpMaps/";
-function createMapContent(mapName, releaseDate, numImgs, videoLink, jumptfLink, tempusLink) {
+function createMapContent(mapName, mainClass, releaseDate, numImgs, showcaseVideoID, jumpTFthreadID, tempusMapName, 
+    mainSpeedRunVideoID, offclassSpeedRunVideoID) {
     var mapGitRepo = mapsGitRepo + "raw/master/" + mapName + "/release/jump_" + mapName + ".bsp";
+    var jumptfDiv = '<a href="https://jump.tf/forum/index.php/topic,' + jumpTFthreadID + '.html">JumpTF Post</a>';
+    var mapDownloadDiv = ' | <a href="' + mapsGitRepo + "raw/master/" + mapName + "/release/jump_" + mapName + '.bsp"><i class="fas fa-download fa-1x"></i> Download</a>';
+    var tempusDiv = (tempusMapName == "") ? "" : (' | <a href="https://tempus.xyz/maps/' + tempusMapName + '">Tempus Times</a>');
+    var screenshotsDiv = '<div class="container-fluid showcase"><center><h3>Screenshots:</h3></center><div id="' + mapName + '-carousel" class="carousel slide" data-ride="carousel"></div></div><br>';
+    var showcaseDiv =  '<div class="container-fluid showcase"><center><h3>Showcase:</h3></center><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + showcaseVideoID + '" allowfullscreen></iframe></div></div>';
+    var otherClass = (mainClass == "Soldier") ? "Demo" : "Soldier";
+    var mainSpeedRunDiv = (mainSpeedRunVideoID == "novid") ? '' : ('<div class="container-fluid showcase"><center><h3>' + mainClass + ' WR</h3></center><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + mainSpeedRunVideoID + '" allowfullscreen></iframe></div></div>');
+    var offclassSpeedRunDiv = (offclassSpeedRunVideoID == "novid") ? '' : ('<div class="container-fluid showcase"><center><h3>' + otherClass + ' WR</h3></center><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + offclassSpeedRunVideoID + '" allowfullscreen></iframe></div></div>');
+
     $("#"+mapName+"-content").html('<h2><center>jump_' + mapName + '</center></h2>' +
-    '<h5><center>Released ' + releaseDate + '</center></h5>' +
-    '<h6><center id="link-wrapper"><a href="' + jumptfLink + '">JumpTF Post</a> | <a href="' + mapGitRepo + '"><i class="fas fa-download fa-1x"></i> Download</a> | <a href="' + tempusLink + '">Tempus Times</a></center></h6>' +
-    '<div class="container-fluid showcase"><center><h3>Screenshots:</h3></center><div id="' + mapName + '-carousel" class="carousel slide" data-ride="carousel"></div></div><br>' +
-    '<div class="container-fluid showcase"><center><h3>Showcase:</h3></center><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="' + videoLink + '" allowfullscreen></iframe></div></div>');
+    '<h5><center>Released ' + releaseDate + '</center></h5><h6><center id="link-wrapper">' +
+    jumptfDiv + mapDownloadDiv + tempusDiv + '</center></h6>' + screenshotsDiv + showcaseDiv +
+    '<br>' + mainSpeedRunDiv + '<br>' + offclassSpeedRunDiv);
 
     $("#"+mapName+"-carousel").html('<ul class="carousel-indicators" id="' + mapName + '-carousel-indicators"></ul>' + 
     '<div class="carousel-inner" id="' + mapName + '-carousel-inner"></div>' +
