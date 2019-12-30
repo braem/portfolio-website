@@ -8,9 +8,8 @@ $(document).ready(function(){
     $('#brae-footer').load("footer.html");
 });
 
-var selectedNavItem;
-
 //NAVBAR stuffs
+var selectedNavItem;
 function setSelectedNavItem(itemNum) {
     selectedNavItem = itemNum;
 }
