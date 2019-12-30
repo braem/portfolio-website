@@ -25,12 +25,11 @@ var mapsGitRepo = "https://github.com/braem/TF2JumpMaps/";
 var lastLoadedMap = "";
 function createMapContent(mapName, mainClass, releaseDate, numImgs, showcaseVideoID, jumpTFthreadID, tempusMapName, 
     mainSpeedRunVideoID, offclassSpeedRunVideoID) {
-    //no map has been loaded
-    if(lastLoadedMap == "") lastLoadedMap = mapName;
-    $("#"+lastLoadedMap+"-content").html('');
+    if(lastLoadedMap == "") lastLoadedMap = mapName; //first loaded map
+    $("#"+lastLoadedMap+"-content").html(''); //unload previous loaded map content
     lastLoadedMap = mapName; //this one loading now
 
-    var mapGitRepo = mapsGitRepo + "raw/master/" + mapName + "/release/jump_" + mapName + ".bsp";
+    //html div code
     var jumptfDiv = '<a href="https://jump.tf/forum/index.php/topic,' + jumpTFthreadID + '.html">JumpTF Post</a>';
     var mapDownloadDiv = ' | <a href="' + mapsGitRepo + "raw/master/" + mapName + "/release/jump_" + mapName + '.bsp"><i class="fas fa-download fa-1x"></i> Download</a>';
     var tempusDiv = (tempusMapName == "") ? "" : (' | <a href="https://tempus.xyz/maps/' + tempusMapName + '">Tempus Times</a>');
@@ -45,12 +44,12 @@ function createMapContent(mapName, mainClass, releaseDate, numImgs, showcaseVide
     jumptfDiv + mapDownloadDiv + tempusDiv + '</center></h6>' + screenshotsDiv + showcaseDiv +
     '<br>' + mainSpeedRunDiv + '<br>' + offclassSpeedRunDiv);
 
+    /* Carousel */
     $("#"+mapName+"-carousel").html('<ul class="carousel-indicators" id="' + mapName + '-carousel-indicators"></ul>' + 
     '<div class="carousel-inner" id="' + mapName + '-carousel-inner"></div>' +
     '<a class="carousel-control-prev" href="#' + mapName + '-carousel"" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>' +
     '<a class="carousel-control-next" href="#' + mapName + '-carousel" data-slide="next"><span class="carousel-control-next-icon"></span></a>');
-
-    /* Filling Carousel */
+    //Filling Carousel
     var imgSrcMain = 'img/maps/'+mapName+'/'+mapName;
     //add carousel indicators
     $("#"+mapName+"-carousel-indicators")
