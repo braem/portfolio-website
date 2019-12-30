@@ -10,16 +10,17 @@ $(document).ready(function(){
 
 var selectedNavItem;
 
+//NAVBAR stuffs
 function setSelectedNavItem(itemNum) {
     selectedNavItem = itemNum;
 }
-
 function updateSelectedNavItem() {
     if(selectedNavItem == null) return;
     selectedNavItem += "NavItem";
     document.getElementById(selectedNavItem).className += " active";
 }
 
+//map stuffs
 var mapsGitRepo = "https://github.com/braem/TF2JumpMaps/";
 function createMapContent(mapName, releaseDate, numImgs, videoLink, jumptfLink, tempusLink) {
     var mapGitRepo = mapsGitRepo + "raw/master/" + mapName + "/release/jump_" + mapName + ".bsp";
@@ -51,7 +52,6 @@ function createMapContent(mapName, releaseDate, numImgs, videoLink, jumptfLink, 
         .append('<div class="carousel-item"><div class="img"><img src="'+imgSrcMain+' (' + (i+2) + ').jpg" class="img-fluid" alt="Responsive image"></div></div>');
     }
 }
-
 function createMapDownloadContent(mapName, imgSrc) {
     var mapGitRepo = mapsGitRepo + "raw/master/" + mapName + "/release/jump_" + mapName + ".bsp";
     $("#"+mapName+"-dl-content")
@@ -67,6 +67,20 @@ function createMapDownloadContent(mapName, imgSrc) {
     '</div>');
 }
 
+//mupsyc stuffs
+function createMuPsycContent(compLength, chordProg, numMP3s, instrument) {
+    $("#"+compLength+"bars_"+chordProg).html('');
+    for(var i=1; i<=numMP3s; i++) {
+        $("#"+compLength+"bars_"+chordProg)
+        .append('<div class="col-md-6"><audio controls>' + 
+        '<source src="mupsyc/mp3/' + instrument + '/' + chordProg + '/' + chordProg + ' (' + i + ').mp3" ' +
+        'type="audio/mp3"> Your browser does not support the audio tag.' +
+        '</audio></div>'
+        );
+    }
+}
+
+//copy text button
 function execCopy(text) {
     const el = document.createElement('textarea');  // Create a <textarea> element
     el.value = text;                                // Set its value to the string that you want copied
