@@ -22,7 +22,7 @@ function updateSelectedNavItem() {
 //map stuffs
 var mapsGitRepo = "https://github.com/braem/TF2JumpMaps/";
 var lastLoadedMap = "";
-function createMapContent(mapName, mainClass, releaseDate, numImgs, showcaseVideoID, jumpTFthreadID, tempusMapName, 
+function createMapContent(mapName, mainClass, authors, releaseDate, numImgs, showcaseVideoID, jumpTFthreadID, tempusMapName, 
     mainSpeedRunVideoID, offclassSpeedRunVideoID) {
     if(lastLoadedMap == "") lastLoadedMap = mapName; //first loaded map
     $("#"+lastLoadedMap+"-content").html(''); //unload previous loaded map content
@@ -39,6 +39,7 @@ function createMapContent(mapName, mainClass, releaseDate, numImgs, showcaseVide
     var offclassSpeedRunDiv = (offclassSpeedRunVideoID == "novid") ? '' : ('<div class="container-fluid showcase"><center><h3>' + otherClass + ' WR:</h3></center><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + offclassSpeedRunVideoID + '" allowfullscreen></iframe></div></div>');
 
     $("#"+mapName+"-content").html('<h2><center>jump_' + mapName + '</center></h2>' +
+    '<h4><center>by ' + authors + '</center></h4>' + 
     '<h5><center>Released ' + releaseDate + '</center></h5><h6><center id="link-wrapper">' +
     jumptfDiv + mapDownloadDiv + tempusDiv + '</center></h6>' + screenshotsDiv + showcaseDiv +
     '<br>' + mainSpeedRunDiv + '<br>' + offclassSpeedRunDiv);
