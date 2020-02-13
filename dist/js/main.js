@@ -19,6 +19,14 @@ function updateSelectedNavItem() {
     document.getElementById(selectedNavItem).className += " active";
 }
 
+//blog stuffs
+function createBlogContent(id, title, date) {
+    $("#blog" + id).html('<div class="container-fluid showcase">' + 
+    '<h2>' + title + '</h2><h5>' + date + '</h5><div id="blog' + id +'-content">' +
+    '</div></div>');
+    $("#blog" + id + "-content").load("blogposts/blog" + id + ".html");
+}
+
 //map stuffs
 var mapsGitRepo = "https://github.com/braem/TF2JumpMaps/";
 var lastLoadedMap = "";
