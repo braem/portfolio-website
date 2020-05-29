@@ -18,7 +18,7 @@ $(document).ready(function(){
             '" role="tabpanel" aria-labelledby="' + mapData[i].name + '-tab">' + 
             // meat n' potatos of content
             '<h2><center>' + mapData[i].name + '</center></h2>' + // title
-            '<h4><center>by ' + mapData[i].authors + '</center></h4>' + // authors/event
+            '<h4><center>by ' + mapData[i].authors + (typeof mapData[i].event == 'undefined' ? '' : (' for ' + mapData[i].event)) + '</center></h4>' + // authors/event
             '<h5><center>Released ' + mapData[i]["creation-date"] + '</center></h5>' + // release date
             '<h6><center id="link-wrapper"><a href="' + mapData[i]["jumptf-link"] + '">JumpTF Post</a> | ' + // jumptf post
             '<a href="' + mapData[i]["download-link"] + '"><i class="fas fa-download fa-1x"></i> Download</a> | ' + // map download link
