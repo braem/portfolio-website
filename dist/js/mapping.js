@@ -35,6 +35,7 @@ $(document).ready(function(){
 
 // load new videos
 function mapTabClicked(tabIndex) {
+    $(".se-pre-con").fadeIn(1);
 
     // screenshots carousel
     var carouselStartingIndex = 0;
@@ -68,4 +69,5 @@ function mapTabClicked(tabIndex) {
                             g_MapData[tabIndex]["offclass-wr-vid-id"] + '" allowfullscreen></iframe>');
     $('#offclass-classname').html('<center><h3>' + (g_MapData[tabIndex].class=='Soldier' ? "Demo" : "Soldier") + ' WR:</h3></center>');
     
+    $(".se-pre-con").fadeOut(800);
 }
