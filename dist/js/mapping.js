@@ -1,6 +1,18 @@
 var g_MapData;
 
 $(document).ready(function(){
+
+    // load sidebar link data
+    $.getJSON("data/mapping-links.json", function(linkData) {
+        var innerHTML = ""
+        for(i in linkData) {
+            innerHTML += '<li class="nav-item"><a class="nav-link" href="' +
+            linkData[i].link + '">' + linkData[i].text + '</a></li>';
+        }
+        $('#mapping-links').html(innerHTML);
+    })
+
+    // load map data
     $.getJSON("data/maps.json", function(mapData) {
         console.log("Map JSON Load Success");
         g_MapData = mapData;
