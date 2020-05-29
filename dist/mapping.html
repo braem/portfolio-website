@@ -17,13 +17,12 @@
   <script src="js/bootstrap/bootstrap.min.js"></script>
 
   <script src="js/main.js"></script>
+  <script src="js/mapping.js"></script>
   <script>
     window.setSelectedNavItem("mapping");
-    $(document).ready(function() {
-      createMapContent("byhicrine", "Soldier", "brae and Patrick for Jump Jam 2019", "Dec. 8, 2019", 7, "G8PD4JY6oXY", "2992", "jump_byhicrine", "tirQD5Tf1HE", "BvvsEqTnjNQ");  
-    });
   </script>
 </head>
+
 <body style="background-color: #2b3039;">
   <div class="se-pre-con"></div>
 
@@ -34,18 +33,11 @@
     <div class="row">
       <div class="col-lg-2 bg-color-dark-2">
         <div class="container-fluid showcase">
+
           <center><h3>My Jump Maps</h3></center>
-          <div class="nav flex-column nav-tabs col-xs-4 nav-da" id="maps-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" id="byhicrine-tab" data-toggle="pill" href="#byhicrine" role="tab" aria-controls="byhicrine" aria-selected="true" onclick='createMapContent("byhicrine", "Soldier", "brae and Patrick for Jump Jam 2019", "Dec. 8, 2019", 7, "G8PD4JY6oXY", "2992", "jump_byhicrine", "tirQD5Tf1HE", "BvvsEqTnjNQ");'>byhicrine</a>
-            <a class="nav-link" id="tawatyr-tab" data-toggle="pill" href="#tawatyr" role="tab" aria-controls="tawatyr" aria-selected="false" onclick='createMapContent("tawatyr", "Soldier", "brae", "Feb. 16, 2019", 9, "w106zX6vYsY", "2835","jump_tawatyr", "F3irupqvuPQ", "U5vvxU2Som4");'>tawatyr</a>
-            <a class="nav-link" id="ataronchronon-tab" data-toggle="pill" href="#ataronchronon" role="tab" aria-controls="ataronchronon" aria-selected="false" onclick='createMapContent("ataronchronon", "Soldier", "brae", "Oct. 22, 2018", 8, "YzNunJxCh8s", "2754", "jump_ataronchronon_b2", "zRv3MEEt9F4", "ib-kbbXwrM0");'>ataronchronon</a>
-            <a class="nav-link" id="abandon-tab" data-toggle="pill" href="#abandon" role="tab" aria-controls="abandon" aria-selected="false" onclick='createMapContent("abandon", "Soldier", "brae for Jump Jam 2018", "Sep. 2, 2018", 6, "rtdy5LRz4hA", "2697", "jump_abandon", "VodXrPhO7gY", "HALcmFJC0UA");'>abandon</a>
-            <a class="nav-link" id="starve-tab" data-toggle="pill" href="#starve" role="tab" aria-controls="starve" aria-selected="false" onclick='createMapContent("starve", "Soldier", "brae", "July 8, 2018", 7, "OMDvh1pGJDg", "2644", "jump_starve", "jLtI7blV2vs", "MFMkbC5VpaA");'>starve</a>
-            <a class="nav-link" id="hana-tab" data-toggle="pill" href="#hana" role="tab" aria-controls="hana" aria-selected="false" onclick='createMapContent("hana", "Demo", "brae", "May 7, 2018", 12, "qN_LlBFhXpY", "2604", "jump_hana", "3nkPRvfFqzE", "aQoru3JPaLo");'>hana</a>
-            <a class="nav-link" id="polar-tab" data-toggle="pill" href="#polar" role="tab" aria-controls="polar" aria-selected="false" onclick='createMapContent("polar", "Soldier", "brae", "Feb. 18, 2018", 10, "EYyBhFLXtlw", "2545", "jump_polar", "fYAvdOWqSzU", "WY3m2Xd8tjw");'>polar</a>
-            <a class="nav-link" id="maso-tab" data-toggle="pill" href="#maso" role="tab" aria-controls="maso" aria-selected="false" onclick='createMapContent("maso", "Soldier", "brae, Syro, and Fishy", "Jan. 8, 2018", 5, "lNN99-Xpf8A", "2521", "jump_maso", "pDM1ddQXKII", "b2SyTwSJ50k");'>maso</a>
-            <a class="nav-link" id="tutankhamun-tab" data-toggle="pill" href="#tutankhamun" role="tab" aria-controls="tutankhamun" aria-selected="false" onclick='createMapContent("tutankhamun", "Soldier", "brae", "Dec. 30, 2017", 7, "O39PqnuPuYU", "2514", "jump_tutankhamun", "epZ6nfxhGu4", "nGMS-gJO3sw");'>tutankhamun</a>
-          </div>
+          <!-- Filled by mapping.js -->
+          <div class="nav flex-column nav-tabs col-xs-4 nav-da" id="maps-tab" role="tablist" aria-orientation="vertical"></div>
+
           <center><h3>Jump Mapping Links</h3></center>
           <ul class="nav nav-tabs flex-column">
             <li class="nav-item">
@@ -82,36 +74,34 @@
         </div>
       </div>
 
-      <div class="tab-content col-lg-10" id="maps-tabContent">
-        <div class="tab-pane fade show active" id="byhicrine" role="tabpanel" aria-labelledby="byhicrine-tab">
-          <div id="byhicrine-content"></div>
-        </div>
-        <div class="tab-pane fade" id="tawatyr" role="tabpanel" aria-labelledby="tawatyr-tab">
-          <div id="tawatyr-content"></div>
-        </div>
-        <div class="tab-pane fade" id="ataronchronon" role="tabpanel" aria-labelledby="ataronchronon-tab">
-          <div id="ataronchronon-content"></div>
-        </div>
-        <div class="tab-pane fade" id="abandon" role="tabpanel" aria-labelledby="abandon-tab">
-          <div id="abandon-content"></div>
-        </div>
-        <div class="tab-pane fade" id="starve" role="tabpanel" aria-labelledby="starve-tab">
-          <div id="starve-content"></div>
-        </div>
-        <div class="tab-pane fade" id="hana" role="tabpanel" aria-labelledby="hana-tab">
-          <div id="hana-content"></div>
-        </div>
-        <div class="tab-pane fade" id="polar" role="tabpanel" aria-labelledby="polar-tab">
-          <div id="polar-content"></div>
-        </div>
-        <div class="tab-pane fade" id="maso" role="tabpanel" aria-labelledby="maso-tab">
-          <div id="maso-content"></div>
-        </div>
-        <div class="tab-pane fade" id="tutankhamun" role="tabpanel" aria-labelledby="tutankhamun-tab">
-          <div id="tutankhamun-content"></div>
+      <div class="col-lg-10">
+        <div class="tab-content" id="maps-tabContent"></div>
+        <br>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="container-fluid showcase">
+              <div id="main-classname"></div>
+              <div class="embed-responsive embed-responsive-16by9" id="main-wr-vid">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="container-fluid showcase">
+              <center><h3>Showcase:</h3></center>
+              <div class="embed-responsive embed-responsive-16by9" id="showcase-vid">
+              </div>
+            </div>
+            <br>
+            <div class="container-fluid showcase">
+              <div id="offclass-classname"></div>
+              <div class="embed-responsive embed-responsive-16by9" id="offclass-wr-vid">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
   
