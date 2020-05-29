@@ -1,7 +1,3 @@
-window.onload = function() {
-    $(".se-pre-con").fadeOut("slow");
-};
-
 $(document).ready(function(){
     $('#jumbo').load("jumbotron.html");
     $('#navi').load("navi.html");
