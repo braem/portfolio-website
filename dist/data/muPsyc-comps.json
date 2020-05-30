@@ -1,0 +1,92 @@
+[
+    {
+        "chord-prog": "I-IV-V-I",
+        "key": "C Major",
+        "bar-length": "4",
+        "shown-comps": "6",
+        "harpsichord-mp3s" : [
+            "mupsyc/4bars/CMajor/harpsichord/I-IV-V-I/comp (1).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-IV-V-I/comp (2).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-IV-V-I/comp (3).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-IV-V-I/comp (4).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-IV-V-I/comp (5).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-IV-V-I/comp (6).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-IV-V-I/comp (7).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-IV-V-I/comp (8).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-IV-V-I/comp (9).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-IV-V-I/comp (10).mp3"
+        ],
+        "piano-mp3s" : [
+            "mupsyc/4bars/CMajor/grandpiano/I-IV-V-I/comp (1).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-IV-V-I/comp (2).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-IV-V-I/comp (3).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-IV-V-I/comp (4).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-IV-V-I/comp (5).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-IV-V-I/comp (6).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-IV-V-I/comp (7).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-IV-V-I/comp (8).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-IV-V-I/comp (9).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-IV-V-I/comp (10).mp3"
+        ]
+    },
+    {
+        "chord-prog": "I-vi-ii-I",
+        "key": "C Major",
+        "bar-length": "4",
+        "shown-comps": "6",
+        "harpsichord-mp3s" : [
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-ii-I/comp (1).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-ii-I/comp (2).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-ii-I/comp (3).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-ii-I/comp (4).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-ii-I/comp (5).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-ii-I/comp (6).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-ii-I/comp (7).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-ii-I/comp (8).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-ii-I/comp (9).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-ii-I/comp (10).mp3"
+        ],
+        "piano-mp3s" : [
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-ii-I/comp (1).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-ii-I/comp (2).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-ii-I/comp (3).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-ii-I/comp (4).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-ii-I/comp (5).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-ii-I/comp (6).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-ii-I/comp (7).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-ii-I/comp (8).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-ii-I/comp (9).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-ii-I/comp (10).mp3"
+        ]
+    },
+    {
+        "chord-prog": "I-vi-IV-V",
+        "key": "C Major",
+        "bar-length": "4",
+        "shown-comps": "6",
+        "harpsichord-mp3s" : [
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-IV-V/comp (1).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-IV-V/comp (2).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-IV-V/comp (3).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-IV-V/comp (4).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-IV-V/comp (5).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-IV-V/comp (6).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-IV-V/comp (7).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-IV-V/comp (8).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-IV-V/comp (9).mp3",
+            "mupsyc/4bars/CMajor/harpsichord/I-vi-IV-V/comp (10).mp3"
+        ],
+        "piano-mp3s" : [
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-IV-V/comp (1).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-IV-V/comp (2).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-IV-V/comp (3).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-IV-V/comp (4).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-IV-V/comp (5).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-IV-V/comp (6).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-IV-V/comp (7).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-IV-V/comp (8).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-IV-V/comp (9).mp3",
+            "mupsyc/4bars/CMajor/grandpiano/I-vi-IV-V/comp (10).mp3"
+        ]
+    }
+]
