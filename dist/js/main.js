@@ -1,19 +1,6 @@
 $(document).ready(function(){
     $('#jumbo').load("jumbotron.html");
-    $('#navi').load("navi.html");
-    $('#brae-footer').load("footer.html");
 });
-
-//NAVBAR stuffs
-var selectedNavItem;
-function setSelectedNavItem(itemNum) {
-    selectedNavItem = itemNum;
-}
-function updateSelectedNavItem() {
-    if(selectedNavItem == null) return;
-    selectedNavItem += "NavItem";
-    document.getElementById(selectedNavItem).className += " active";
-}
 
 //blog stuffs
 function createBlogContent(id, title, date) {
