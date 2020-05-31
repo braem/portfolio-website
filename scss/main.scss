@@ -248,6 +248,10 @@ body {
   padding-left:0.8em;
 }
 
+.btn {
+  border-radius: 0 !important;
+}
+
 .card {
   border: 0.15em solid $background-color-4 !important;
 }
