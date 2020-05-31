@@ -27,4 +27,20 @@ $(document).ready(function(){
 
         $('#mupsyc-content').html(innerHTML);
     })
+
+    $.getJSON("data/publications.json", function(publicationData) {
+        var innerHTML = '<center><h3>Publications</h3></center> <ul class="nav nav-tabs flex-column">';
+        for (i in publicationData)
+        {
+            innerHTML += '<li class="nav-item">' +
+            '<a class="nav-link" href="' + publicationData[i].link + '">' +
+            '<center style="font-weight:bold">' + publicationData[i].title + '</center>' +
+            '<center>Published in' + (publicationData[i].type == 'Conference' ? ' and presented at' : '') + ' the ' + 
+            publicationData[i].year + ' ' + publicationData[i].in + 
+            (publicationData[i].type == 'Conference' ? (', in ' + publicationData[i]['conf-location']) : '') +
+            '</center></a></li>';
+        }
+        innerHTML += '</ul>'
+        $('#publication-links').html(innerHTML);
+    })
 })
