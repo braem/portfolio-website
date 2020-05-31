@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "fab fa-spotify fa-2x",
+        "link": "https://open.spotify.com/user/qpoc3wgylgc40x2wn1e9qkbxg"
+    },
+    {
+        "icon": "fab fa-github fa-2x",
+        "link": "https://github.com/braem"
+    },
+    {
+        "icon": "fab fa-linkedin fa-2x",
+        "link": "https://www.linkedin.com/in/brae-stoltz-382101110/"
+    },
+    {
+        "icon": "fas fa-book-reader fa-2x",
+        "link": "https://scholar.google.ca/citations?user=t1lXkDgAAAAJ&hl=en&oi=ao"
+    },
+    {
+        "icon": "fas fa-book fa-2x",
+        "link": "https://ieeexplore.ieee.org/author/37086934310"
+    }
+]
