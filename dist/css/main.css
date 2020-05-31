@@ -93,6 +93,15 @@ body {
   background-color: #282c34;
   border: 0.2em solid #21252c; }
 
+.sidebar {
+  margin: 0;
+  padding: 0 !important;
+  background-color: #282c34;
+  border: 0.2em solid #21252c; }
+
+.sidebar-title {
+  padding-top: 0.3em; }
+
 .download-showcase-container {
   background-color: #282c34;
   border: 0.2em solid #21252c;
@@ -167,12 +176,18 @@ body {
 
 #main-container .nav-tabs {
   background-color: #282c34;
-  border: 0.2em solid #21252c; }
+  border-bottom: 0.2em solid #21252c;
+  border-top: 0.2em solid #21252c; }
+
+#main-container .nav-tabs:last-child {
+  background-color: #282c34;
+  border-bottom: 0; }
 
 #main-container .nav-tabs .nav-item {
   width: 100%; }
 
 #main-container .nav-tabs .nav-link {
+  border-radius: 0;
   border: 0.1em solid transparent;
   color: #cccccc;
   font-size: 1.2em; }
@@ -216,3 +231,5 @@ body {
   bottom: 1em;
   margin: 0 !important;
   padding: 0 !important; }
+
+/*# sourceMappingURL=main.css.map */

@@ -25,7 +25,7 @@ $(document).ready(function(){
     })
 
     $.getJSON("data/publications.json", function(publicationData) {
-        var innerHTML = '<center><h3>Publications</h3></center> <ul class="nav nav-tabs flex-column">';
+        var innerHTML = '<center><h3 class="sidebar-title">Publications</h3></center> <ul class="nav nav-tabs flex-column">';
         for (i in publicationData)
         {
             innerHTML += '<li class="nav-item">' +
