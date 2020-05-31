@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Research",
+        "link": "research.html"
+    },
+    {
+        "title": "Mapping",
+        "link": "mapping.html"
+    },
+    {
+        "title": "Music",
+        "link": "music.html"
+    },
+    {
+        "title": "Downloads",
+        "link": "downloads.html"
+    },
+    {
+        "title": "Contact",
+        "link": "contact.html"
+    }
+]
