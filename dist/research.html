@@ -19,8 +19,8 @@
   <script src="js/midijs/midi.js"></script>
 
   <script src="js/gif-fadeout.js"></script>
-  <script src="js/research.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/research.js"></script>
   <script>
     window.setSelectedNavItem("research");
   </script>
@@ -42,8 +42,17 @@
           </p>
         </div>
         <br>
-        <!-- filled by research.js -->
-        <div id="mupsyc-content" class="container-fluid showcase"></div>
+        <div class="container-fluid showcase">
+          <center><h3>&mu;Psyc Compositions</h3></center>
+          <center>
+            <div id="instrument-btngrp" class="btn-group btn-group-toggle">
+              <button type="button" id="pianobtn" class="btn btn-dark active">Piano</button>
+              <button type="button" id="harpsichordbtn" class="btn btn-dark">Harpsichord</button>
+            </div>
+          </center>
+          <!-- filled by research.js -->
+          <div id="mupsyc-content"></div>
+        </div>
       </div>
       <div class="col-sm-4">
         <!-- filled by research.js -->
