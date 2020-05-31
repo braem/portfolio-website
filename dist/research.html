@@ -18,16 +18,12 @@
 
   <script src="js/midijs/midi.js"></script>
 
+  <script src="js/gif-fadeout.js"></script>
+  <script src="js/research.js"></script>
   <script src="js/main.js"></script>
   <script>
     window.setSelectedNavItem("research");
-    $(document).ready(function() {
-      createMuPsycContent(4, "I-IV-V-I", 10, "harpsichord", "CMajor");
-      createMuPsycContent(4, "I-vi-ii-I", 6, "harpsichord", "CMajor");
-      createMuPsycContent(4, "I-vi-IV-V", 6, "harpsichord", "CMajor");
-    });
   </script>
-  <script src="js/gif-fadeout.js"></script>
 </head>
 <body style="background-color: #2b3039;">
   <div class="se-pre-con"></div>
@@ -46,15 +42,8 @@
           </p>
         </div>
         <br>
-        <div class="container-fluid showcase">
-          <center><h3>&mu;Psyc Compositions</h3></center>
-          <center><h5>4 bar compositions in C Major with I-IV-V-I chord progression</h5></center>
-          <div class="row row-no-gutters" id="4bars_I-IV-V-I_CMajor"></div>
-          <center><h5>4 bar compositions in C Major with I-vi-ii-I chord progression</h5></center>
-          <div class="row row-no-gutters" id="4bars_I-vi-ii-I_CMajor"></div>
-          <center><h5>4 bar compositions in C Major with I-vi-IV-V chord progression</h5></center>
-          <div class="row row-no-gutters" id="4bars_I-vi-IV-V_CMajor"></div>
-        </div>
+        <!-- filled by research.js -->
+        <div id="mupsyc-content" class="container-fluid showcase"></div>
       </div>
       <div class="col-sm-4">
         <div class="container-fluid showcase">

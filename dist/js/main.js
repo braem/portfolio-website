@@ -38,19 +38,6 @@ function createMapDownloadContent(mapName, imgSrc) {
     '</div>');
 }
 
-//mupsyc stuffs
-function createMuPsycContent(compLength, chordProg, numMP3s, instrument, key) {
-    $("#"+compLength+"bars_"+chordProg).html('');
-    for(var i=1; i<=numMP3s; i++) {
-        $("#"+compLength+"bars_"+chordProg+"_"+key)
-        .append('<div class="col-md-6"><audio controls style="width:100%">' + 
-        '<source src="mupsyc/' + compLength + 'bars/' + key + "/" +  instrument + '/' + chordProg + '/comp (' + i + ').mp3" ' +
-        'type="audio/mp3"> Your browser does not support the audio tag.' +
-        '</audio></div>'
-        );
-    }
-}
-
 //copy text button
 function execCopy(text) {
     const el = document.createElement('textarea');  // Create a <textarea> element
