@@ -1,5 +1,9 @@
 body {
-  background-color: #21252c; }
+  background-color: #21252c;
+  min-height: 100vh;
+  padding-bottom: 3.4em !important;
+  box-sizing: border-box;
+  position: relative; }
 
 ::-webkit-scrollbar {
   width: 1em; }
@@ -178,17 +182,24 @@ body {
   padding-right: 1em; }
 
 /* Footer styles */
+.page-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 3.4em; }
+
 .page-footer .nav {
   font-size: 1em;
   border-top: 0.2em solid #21252c;
-  border-bottom: 0.2em solid #21252c; }
+  border-bottom: 0.2em solid #21252c;
+  height: 3.4em; }
 
 .page-footer .nav .nav-item:hover {
   background-color: #21252c; }
 
 /* Container & side-menu styles (navs and headers) */
 #main-container {
-  margin: 0em !important; }
+  height: 100%; }
 
 #main-container .nav-tabs {
   background-color: #282c34;
