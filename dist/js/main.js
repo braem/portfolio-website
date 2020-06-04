@@ -10,21 +10,6 @@ function createBlogContent(id, title, date) {
     $("#blog" + id + "-content").load("blogposts/blog" + id + ".html");
 }
 
-function createMapDownloadContent(mapName, imgSrc) {
-    var mapGitRepo = mapsGitRepo + "raw/master/" + mapName + "/release/jump_" + mapName + ".bsp";
-    $("#"+mapName+"-dl-content")
-    //inline css here because nothing else works
-    .html('<style type="text/css"> #'+mapName+'-dl-jumbo { background-image: url(\'' +imgSrc+ '\'); }</style>' + 
-    '<div class="container download-showcase-container">' + 
-    '<div id="' + mapName + '-dl-jumbo" class="jumbotron jumbotron-fluid bg-cover">' +
-    '<div class="container nopadding d-flex flex-column">' +
-    '<div class="p-2">&nbsp;</div>' +
-    '<a class="download-icon" href="' + mapGitRepo + '"><i class="fas fa-file-download fa-4x"></i></a>' + 
-    '<div class="download-showcase-img-caption">' + mapName + '</div>' + 
-    '</div></div>' + //jumbotron div end
-    '</div>');
-}
-
 //copy text button
 function execCopy(text) {
     const el = document.createElement('textarea');  // Create a <textarea> element
