@@ -6,5 +6,12 @@
         "type": "Conference",
         "conf-location": "Wellington, New Zealand",
         "link": "https://ieeexplore.ieee.org/abstract/document/8790099"
+    },
+    {
+        "title": "MU_PSYC : Algorithmic music composition with a music-psychology enriched genetic algorithm",
+        "in": "UNBC",
+        "year": "2020",
+        "type": "Thesis",
+        "link": "https://unbc.arcabc.ca/islandora/object/unbc%3A59041"
     }
 ]

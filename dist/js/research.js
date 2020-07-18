@@ -30,11 +30,21 @@ $(document).ready(function(){
         {
             innerHTML += '<li class="nav-item">' +
             '<a class="nav-link" href="' + publicationData[i].link + '">' +
-            '<center style="font-weight:bold">' + publicationData[i].title + '</center>' +
-            '<center>Published in' + (publicationData[i].type == 'Conference' ? ' and presented at' : '') + ' the ' + 
-            publicationData[i].year + ' ' + publicationData[i].in + 
-            (publicationData[i].type == 'Conference' ? (', in ' + publicationData[i]['conf-location']) : '') +
-            '</center></a></li>';
+            '<center style="font-weight:bold">' + publicationData[i].title + '</center>';
+
+            if (publicationData[i].type == 'Thesis')
+            {
+                innerHTML += '<center>MSc in CS Thesis</center>';
+            }
+            else
+            {
+                innerHTML += '<center>Published in' + (publicationData[i].type == 'Conference' ? ' and presented at' : '') + ' the ' + 
+                publicationData[i].year + ' ' + publicationData[i].in + 
+                (publicationData[i].type == 'Conference' ? (', in ' + publicationData[i]['conf-location']) : '') +
+                '</center>';
+            }
+
+            innerHTML += '</a></li>';
         }
         innerHTML += '</ul>'
         $('#publication-links').html(innerHTML);
