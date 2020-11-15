@@ -31,10 +31,13 @@ $(document).ready(function(){
             // meat n' potatos of content
             '<h2><center>' + mapData[i].name + '</center></h2>' + // title
             '<h4><center>by ' + mapData[i].authors + (typeof mapData[i].event == 'undefined' ? '' : (' for ' + mapData[i].event)) + '</center></h4>' + // authors/event
-            '<h5><center>Released ' + mapData[i]["creation-date"] + '</center></h5>' + // release date
-            '<h6><center id="link-wrapper"><a href="' + mapData[i]["jumptf-link"] + '">JumpTF Post</a> | ' + // jumptf post
-            '<a href="' + mapData[i]["download-link"] + '"><i class="fas fa-download fa-1x"></i> Download</a> | ' + // map download link
-            '<a href="' + mapData[i]["tempus-link"] + '">Tempus Times</a>' + // tempus leaderboard
+            '<h5><center>Released ' + mapData[i]["creation-date"] + '</center></h5>'; // release date
+            
+            // inline links
+            contentInnerHTML += '<h6><center id="link-wrapper">' + 
+            ((typeof mapData[i]["jumptf-link"] == 'undefined') ? '' : '<a href="' + (mapData[i]["jumptf-link"] + '">JumpTF Post</a> | ')) + // jumptf post
+            '<a href="' + mapData[i]["download-link"] + '"><i class="fas fa-download fa-1x"></i> Download</a>' + // map download link
+            ((typeof mapData[i]["tempus-link"] == 'undefined') ? '' : (' | <a href="' + mapData[i]["tempus-link"] + '">Tempus Times</a>')) + // tempus leaderboard
             '</center></h6>' + 
             "</div>";
         }
