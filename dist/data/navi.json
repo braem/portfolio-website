@@ -1,5 +1,9 @@
 [
     {
+        "title": "Projects",
+        "link": "projects.html"
+    },
+    {
         "title": "Mapping",
         "link": "mapping.html"
     },
