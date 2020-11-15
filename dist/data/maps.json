@@ -1,5 +1,27 @@
 [
     {
+        "name": "sj_NaissanceE",
+        "class": "Sticky Jump",
+        "authors": "brae",
+        "creation-date": "Oct. 24th 2020",
+        "download-link": "https://github.com/braem/sj_NaissanceE/releases/tag/RC3",
+        "jumptf-link": "https://jump.tf/forum/index.php/topic,3176.0.html",
+        "screenshots": [
+            "img/maps/naissancee/naissancee (1).jpg",
+            "img/maps/naissancee/naissancee (2).jpg",
+            "img/maps/naissancee/naissancee (3).jpg",
+            "img/maps/naissancee/naissancee (4).jpg",
+            "img/maps/naissancee/naissancee (5).jpg",
+            "img/maps/naissancee/naissancee (6).jpg",
+            "img/maps/naissancee/naissancee (7).jpg",
+            "img/maps/naissancee/naissancee (8).jpg",
+            "img/maps/naissancee/naissancee (9).jpg",
+            "img/maps/naissancee/naissancee (10).jpg",
+            "img/maps/naissancee/naissancee (11).jpg"
+        ],
+        "showcase-vid-id": "wJOlGrP5HFY"
+    },
+    {
         "name": "jump_byhicrine",
         "class": "Soldier",
         "authors": "brae and Patrick",
