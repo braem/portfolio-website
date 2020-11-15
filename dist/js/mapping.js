@@ -73,16 +73,19 @@ function mapTabClicked(tabIndex) {
     '<span class="carousel-control-next-icon"></span></a>';
 
     $('#maps-carousel').html(carouselInner + carouselControl);
-    $('#showcase-vid').html('<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + 
-                            g_MapData[tabIndex]["showcase-vid-id"] + '" allowfullscreen></iframe>');
 
-    $('#main-wr-vid').html('<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + 
-                            g_MapData[tabIndex]["mainclass-wr-vid-id"] + '" allowfullscreen></iframe>');
-    $('#main-classname').html('<center><h3>' + g_MapData[tabIndex].class + ' WR:</h3></center>');
+    var showcaseVidStart = '<div class="container-fluid showcase"><center><h3>';
+    var showcaseVidMid = '</h3></center><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/';
+    var showcaseVidEnd = '" allowfullscreen></iframe></div></div>'
 
-    $('#offclass-wr-vid').html('<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/' + 
-                            g_MapData[tabIndex]["offclass-wr-vid-id"] + '" allowfullscreen></iframe>');
-    $('#offclass-classname').html('<center><h3>' + (g_MapData[tabIndex].class=='Soldier' ? "Demo" : "Soldier") + ' WR:</h3></center>');
+    var mapshowcaseHTML = showcaseVidStart + 'Showcase:' + showcaseVidMid + g_MapData[tabIndex]["showcase-vid-id"] + showcaseVidEnd;
+    $('#map-showcase').html(mapshowcaseHTML);
+
+    var mainclassHTML = showcaseVidStart + g_MapData[tabIndex].class + ' WR:' + showcaseVidMid + g_MapData[tabIndex]["mainclass-wr-vid-id"] + showcaseVidEnd;
+    $('#mainclass-wr').html((typeof g_MapData[tabIndex]["mainclass-wr-vid-id"] == 'undefined') ? '' : mainclassHTML);
+    
+    var offclassHTML = showcaseVidStart + (g_MapData[tabIndex].class=='Soldier' ? "Demo" : "Soldier") + ' WR:' + showcaseVidMid + g_MapData[tabIndex]["offclass-wr-vid-id"] + showcaseVidEnd;
+    $('#offclass-wr').html((typeof g_MapData[tabIndex]["offclass-wr-vid-id"] == 'undefined') ? '' : offclassHTML);
     
     $(".se-pre-con").fadeOut(800);
 }
