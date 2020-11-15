@@ -1,11 +1,11 @@
 [
     {
-        "title": "Research",
-        "link": "research.html"
-    },
-    {
         "title": "Mapping",
         "link": "mapping.html"
+    },
+    {
+        "title": "Research",
+        "link": "research.html"
     },
     {
         "title": "Contact",
